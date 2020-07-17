@@ -15,7 +15,7 @@ class student_login_system:
         self.project.geometry("1200x1200+0+0")
         self.project.resizable(False,False)
         #<<<<<<<   Add Background Image for Window#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-        self.background_image =ImageTk.PhotoImage(Image.open("C:/Users/nbhat/Downloads/291751.jpg"))
+        self.background_image =ImageTk.PhotoImage(Image.open("C:/Users/nbhat/PycharmProjects/python_tkinter project/291751.jpg"))
         back_ground_label = Label(self.project, image=self.background_image)
         back_ground_label.pack()
 
@@ -535,6 +535,8 @@ class school_management_system(student_resgistration_system):
         self.fetch_data()
         self.clear_all()
         com.close()
+
+    # >>>>>>>>>>>>>>>>>>>>>>>>>SEARCH FUNCTION OF MAIN WINDOW<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<$#
     def search(self):
         con = pymysql.connect(host="localhost", user="root", password="", database="narayani")
         cur = con.cursor()
