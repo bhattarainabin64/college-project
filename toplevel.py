@@ -23,7 +23,7 @@ class student_login_system:
         login_system_frame=Frame(self.project,bg="purple")
         login_system_frame.place(x=100,y=200,height=500,width=600)
 
-        self.left_image_login = ImageTk.PhotoImage(Image.open("C:/Users/nbhat/Downloads/icons8-person-80.png"))
+        self.left_image_login = ImageTk.PhotoImage(Image.open("C:/Users/nbhat/PycharmProjects/python_tkinter project/icons8-person-80.png"))
         left = Label(login_system_frame,image = self.left_image_login, bg = "orange")
         left.place(x=250, y=80,width=150,height=160)
 
@@ -54,7 +54,7 @@ class student_login_system:
 
 
         # <<<<<<<<<<<<<<<<<<Button for Log in#>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
-        self.login_image=ImageTk.PhotoImage(Image.open("C:/Users/nbhat/Downloads/180553.png"))
+        self.login_image=ImageTk.PhotoImage(Image.open("C:/Users/nbhat/PycharmProjects/python_tkinter project/180553.png"))
         self.button2 = Button(login_system_frame, text="Log in",image=self.login_image,command=self.login, width=150, height=23, bg="pink", fg="blue")
         self.button2.place(x=221, y=420)
 
@@ -88,11 +88,11 @@ class student_resgistration_system():
             self.project.config(bg="purple")
 
             # <<<<<<<   Add Background Image for Window#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-            self.background_image = ImageTk.PhotoImage(Image.open("C:/Users/nbhat/Downloads/backgroundname.jpeg"))
+            self.background_image = ImageTk.PhotoImage(Image.open("C:/Users/nbhat/PycharmProjects/python_tkinter project/backgroundname.jpeg"))
             back_ground_label = Label(self.project, image=self.background_image)
             back_ground_label.place(x=200, y=0, relwidth=1, relheight=1)
             # <<<<<<<<<<<<< Adding left image#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-            self.left_image = ImageTk.PhotoImage(Image.open("C:/Users/nbhat/Downloads/unnamed.jpg"))
+            self.left_image = ImageTk.PhotoImage(Image.open("C:/Users/nbhat/PycharmProjects/python_tkinter project/unnamed.jpg"))
             left = Label(self.project, image=self.left_image, bg="orange")
             left.place(x=40, y=130, width=440, height=530)
 
@@ -129,7 +129,7 @@ class student_resgistration_system():
             stw_conform_password = Label(login_system_frame, text="Conform Password", bg="white", fg="Purple", font=("Arial bold", 14))
             stw_conform_password.place(x=450, y=360)
 
-           #>>>>>>>>>>>>>>>>>>>>>>>>> all ENtey field list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>#
+           #>>>>>>>>>>>>>>>>>>>>>>>>> all Entry field list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>#
             self.entry1 = StringVar()
             self.entry2 = StringVar()
             self.entry3 = StringVar()
@@ -139,7 +139,6 @@ class student_resgistration_system():
             self.entry7 = StringVar()
             self.entry8 = StringVar()
             self.cheak_button1 = IntVar()
-
 
         #>>>>>>>>>>>>>>>>>>>>>>>>>>>> All entry variable list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             self.stw_first_name_entry = Entry(login_system_frame, bd=5, textvar=self.entry1, width=22, bg='sky blue', font=("Calibri Light", 14))
@@ -170,7 +169,7 @@ class student_resgistration_system():
             self.cheak_button.place(x=60, y=450)
 
             self.button0_image = ImageTk.PhotoImage(
-                Image.open("C:/Users/nbhat/Downloads/register-login-web-button_1296634.jpg"))
+                Image.open("C:/Users/nbhat/PycharmProjects/python_tkinter project/Registerbutton.jpg"))
             self.button = Button(login_system_frame, text="Register", command=self.add_data, image=self.button0_image, width=160, height=28, bg="gray", fg="blue",font=("times new roman", 20))
             self.button.place(x=260, y=480)
 
@@ -214,7 +213,7 @@ class school_management_system(student_resgistration_system):
         self.project.geometry("1800x1800+0+0")
         self.project.configure(bg="")
 
-        self.background_image = ImageTk.PhotoImage(Image.open("C:/Users/nbhat/Downloads/html-color-codes-color-tutorials-hero-00e10b1f.jpg"))
+        self.background_image = ImageTk.PhotoImage(Image.open("C:/Users/nbhat/PycharmProjects/python_tkinter project/mainwindowtheme.jpg"))
         back_ground_label = Label(self.project, image=self.background_image)
         back_ground_label.place(x=0, y=0, relwidth=1, relheight=1)
 
@@ -233,127 +232,134 @@ class school_management_system(student_resgistration_system):
         stw_first_name = Label(login_system_frame, text="First Name", fg="Purple", font=("Arial bold", 16))
         stw_first_name.place(x=30, y=90)
 
+        #>>>>>>>>>>>>>>>>>>>>>>>>>>ALL ENTRY FIELD>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>$#
+
         self.entry1 = StringVar()
+        self.entry2 = StringVar()
+        self.entry3 = StringVar()
+        self.entry4 = StringVar()
+        self.entry5 = StringVar()
+        self.entry6 = StringVar()
+        self.entry7 = StringVar()
+        self.entry8 = StringVar()
+        self.entry9 = StringVar()
+        self.entry10 = StringVar()
+        self.entry11 = StringVar()
+        self.entry12 = StringVar()
+        self.entry13 = StringVar()
+        self.entry14 = StringVar()
+        self.entry15 = StringVar()
+        self.entry16 = StringVar()
+        self.search_by = StringVar()
+        self.txt = StringVar()
+
+
+    #>>>>>>>>>>>>>>>>>>>>>>>ALL ENTRY LABEL VARIABLE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>%$
+
         self.stw_first_name_entry = Entry(login_system_frame, bd=5, textvar=self.entry1, width=22, bg='sky blue', font=("Calibri Light", 14))
         self.stw_first_name_entry.place(x=150, y=90)
 
         stw_last_name = Label(login_system_frame, text="Last Name", fg="Purple", font=("Arial bold", 16))
         stw_last_name.place(x=30, y=140)
 
-        self.entry2 = StringVar()
         self.stw_last_name_entry = Entry(login_system_frame, bd=5, textvar=self.entry2, width=22, bg='sky blue', font=("Calibri Light", 14))
         self.stw_last_name_entry.place(x=150, y=140)
 
         stw_student_id = Label(login_system_frame, text="Student ID", fg="Purple", font=("Arial bold", 16))
         stw_student_id.place(x=30, y=190)
 
-        self.entry3 = StringVar()
         self.stw_student_id_entry = Entry(login_system_frame, bd=5, textvar=self.entry3, width=22, bg='sky blue', font=("Calibri Light", 14))
         self.stw_student_id_entry.place(x=150, y=190)
 
         stw_class = Label(login_system_frame, text="  Class", fg="Purple", font=("Arial bold", 16))
         stw_class.place(x=30, y=240)
 
-        self.entry4 = StringVar()
         self.stw_class_entry = Entry(login_system_frame, bd=5, textvar=self.entry4, width=22, bg='sky blue', font=("Calibri Light", 14))
         self.stw_class_entry.place(x=150, y=240)
 
         stw_avarege = Label(login_system_frame, text="  Average", fg="Purple", font=("Arial bold", 16))
         stw_avarege.place(x=30, y=290)
 
-
-        self.entry5 = StringVar()
         self.stw_averege_entry = Entry(login_system_frame, bd=5, textvar=self.entry5, width=22, bg='sky blue', font=("Calibri Light", 14))
         self.stw_averege_entry.place(x=150, y=290)
 
         stw_grade = Label(login_system_frame, text="Grade", fg="Purple", font=("Arial bold", 16))
         stw_grade.place(x=30, y=340)
 
-        self.entry6 = StringVar()
+
         self.stw_grade_entry = Entry(login_system_frame, bd=5, textvar=self.entry6, width=22, bg='sky blue', font=("Calibri Light", 14))
         self.stw_grade_entry.place(x=150, y=340)
 
         stw_ranking = Label(login_system_frame, text="Ranking", fg="Purple", font=("Arial bold", 16))
         stw_ranking.place(x=30, y=390)
 
-        self.entry7 = StringVar()
         self.stw_ranking_entry = Entry(login_system_frame, bd=5, textvar=self.entry7, width=22, bg='sky blue', font=("Calibri Light", 14))
         self.stw_ranking_entry.place(x=150, y=390)
 
         stw_exam_no = Label(login_system_frame, text="Exam No", fg="Purple", font=("Arial bold", 16))
         stw_exam_no.place(x=30, y=440)
 
-        self.entry8 = StringVar()
         self.stw_exam_no_entry = Entry(login_system_frame, bd=5, textvar=self.entry8, width=22, bg='sky blue',font=("Calibri Light", 14))
         self.stw_exam_no_entry.place(x=150, y=440)
 
         stw_mathematics = Label(login_system_frame, text="mathematics", fg="Purple", font=("Arial bold", 16))
         stw_mathematics.place(x=395, y=90)
 
-        self.entry9 = StringVar()
+
         self.stw_mathematics_entry = Entry(login_system_frame, bd=5, textvar=self.entry9, width=22, bg='sky blue', font=("Calibri Light", 14))
         self.stw_mathematics_entry.place(x=540, y=90)
 
         stw_english = Label(login_system_frame, text="English", fg="Purple", font=("Arial bold", 16))
         stw_english.place(x=395, y=140)
 
-        self.entry10 = StringVar()
+
         self.stw_english_entry = Entry(login_system_frame, bd=5, textvar=self.entry10, width=22, bg='sky blue', font=("Calibri Light", 14))
         self.stw_english_entry.place(x=540, y=140)
 
         stw_science = Label(login_system_frame, text="Science", fg="Purple", font=("Arial bold", 16))
         stw_science.place(x=395, y=190)
 
-        self.entry11 = StringVar()
         self.stw_science_entry = Entry(login_system_frame, bd=5, textvar=self.entry11, width=22, bg='sky blue', font=("Calibri Light", 14))
         self.stw_science_entry.place(x=540, y=190)
 
         stw_social = Label(login_system_frame, text="Social", fg="Purple", font=("Arial bold", 16))
         stw_social.place(x=395, y=240)
 
-        self.entry12= StringVar()
         self.stw_social_entry = Entry(login_system_frame, bd=5, textvar=self.entry12, width=22, bg='sky blue',font=("Calibri Light", 14))
         self.stw_social_entry.place(x=540, y=240)
 
         stw_computer = Label(login_system_frame, text="Computer", fg="Purple", font=("Arial bold", 16))
         stw_computer.place(x=395, y=290)
 
-        self.entry13 = StringVar()
         self.stw_computer_entry = Entry(login_system_frame, bd=5, textvar=self.entry13, width=22, bg='sky blue', font=("Calibri Light", 14))
         self.stw_computer_entry.place(x=540, y=290)
 
         stw_nepali = Label(login_system_frame, text="Nepali", fg="Purple", font=("Arial bold", 16))
         stw_nepali.place(x=395, y=340)
 
-        self.entry14 = StringVar()
         self.stw_nepali_entry = Entry(login_system_frame, bd=5, textvar=self.entry14, width=22, bg='sky blue', font=("Calibri Light", 14))
         self.stw_nepali_entry.place(x=540, y=340)
 
         stw_account = Label(login_system_frame, text="Account", fg="Purple", font=("Arial bold", 16))
         stw_account.place(x=395, y=390)
 
-        self.entry15 = StringVar()
         self.stw_account_entry = Entry(login_system_frame, bd=5, textvar=self.entry15, width=22, bg='sky blue', font=("Calibri Light", 14))
         self.stw_account_entry.place(x=540, y=390)
 
         stw_addmath = Label(login_system_frame, text="Add Maths", fg="Purple", font=("Arial bold", 16))
         stw_addmath.place(x=395, y=440)
 
-        self.entry16 = StringVar()
         self.stw_addmath_entry = Entry(login_system_frame, bd=5, textvar=self.entry16, width=22, bg='sky blue',  font=("Calibri Light", 14))
         self.stw_addmath_entry.place(x=540, y=440)
 
         stw_search = Label(self.project, text="Search By", fg="Purple", font=("Arial bold", 18))
         stw_search.place(x=180, y=600)
 
-        self.search_by=StringVar()
-        self.txt=StringVar()
-
-
         self.stw_search_combobox=ttk.Combobox(self.project,textvar=self.search_by,font=("calibri light",18),width=12)
         self.stw_search_combobox["values"]=["firstname","examno","studentID","class","average"]
         self.stw_search_combobox.place(x=320,y=600)
 
+#>>>>>>>>>>>>>>>>>>ALL BUTTON OF MAIN WINDOW<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<$#
         self.button1 = Button(self.project, text="Add", width=10,command=self.add_data, height=1, bg="gray", fg="blue",  font=("times new roman", 15))
         self.button1.place(x=20, y=600)
 
@@ -366,18 +372,14 @@ class school_management_system(student_resgistration_system):
         self.button4 = Button(self.project, text="Delete", command=self.delete_data,width=10, height=1, bg="gray", fg="blue", font=("times new roman", 15))
         self.button4.place(x=20, y=750)
 
-
         self.button5 = Button(self.project,command=self.search, text="Search", width=10, height=1, bg="gray", fg="blue",font=("times new roman", 15))
         self.button5.place(x=500, y=600)
 
         self.button5 = Button(self.project, text="Show all",command=self.fetch_data, width=10, height=1, bg="gray", fg="blue", font=("times new roman", 15))
         self.button5.place(x=180, y=650)
 
-
         self.button = Entry(self.project,textvar=self.txt, width=15,bd=5, bg="sky blue", fg="blue",font=("times new roman", 15))
         self.button.place(x=630, y=600)
-
-
 
         #====================================Adding scroll bar============================================#
 
@@ -412,7 +414,7 @@ class school_management_system(student_resgistration_system):
 
 
 
-#<<<<<<<<<<<<<<<<<<<<<<<<< adding data into databse of main window#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#<<<<<<<<<<<<<<<<<<<<<<<<< ADDING DATA OF MAIN WINDOW INTO DATABASE#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     def add_data(self,):
         if self.entry1.get() == "" or self.entry2.get() == "" or self.entry3.get() == "" or self.entry4.get == "" or self.entry5.get() == "" or self.entry6.get() == "" or self.entry7.get() == "" or self.entry8.get == "" or self.entry9.get() == "" or self.entry10.get() == "" or self.entry11.get() == "" or self.entry12.get() == "" or self.entry13.get() == "" or self.entry14.get() == "" or self.entry15.get() == "" or self.entry16.get() == "":
@@ -446,6 +448,7 @@ class school_management_system(student_resgistration_system):
             self.clear_all()
             con.close()
 
+#>>>>>>>>>>>>>ALL FETCH SCREEN DATA FUNCTION>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>$#
     def fetch_data(self):
         con = pymysql.connect(host="localhost", user="root", password="", database="narayani")
         cur = con.cursor()
@@ -455,12 +458,11 @@ class school_management_system(student_resgistration_system):
             self.Student_table.delete(*self.Student_table.get_children())
             for row in rows:
                 self.Student_table.insert('', END, values=row)
-
         con.commit()
         self.clear_all()
         con.close()
 
-
+#>>>>>>>>>>>>>>>>>>>>>>>CLEAR FUNCTION OF MAIN WINDOW>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>$#
     def clear_all(self):
         self.stw_first_name_entry.delete(0,END)
         self.stw_last_name_entry.delete(0, END)
@@ -479,7 +481,7 @@ class school_management_system(student_resgistration_system):
         self.stw_account_entry.delete(0, END)
         self.stw_addmath_entry.delete(0, END)
 
-
+#>>>>>>>>>>>>>>>>>>>>>>>> CURSOR POINT IN ENTRY FUNCTION OF MAIN WINDOW<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<$#
     def cursor_fetch(self,ev):
         coursor_row = self.Student_table.focus()
         data = self.Student_table.item(coursor_row)
@@ -500,6 +502,8 @@ class school_management_system(student_resgistration_system):
         self.entry14.set(row[13])
         self.entry15.set(row[14])
         self.entry16.set(row[15])
+
+#>>>>>>>>>>>>>>>>>>>>DELETE DATA OF MAINDOW FUNCTION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<$#
     def delete_data(self):
         con = pymysql.connect(host="localhost", user="root", password="", database="narayani")
         cur = con.cursor()
@@ -508,6 +512,7 @@ class school_management_system(student_resgistration_system):
         con.close()
         self.fetch_data()
 
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>UPDATE DATA  FUNCTION OF MAIN WINDOW>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>$#
     def update_data(self):
         com = pymysql.connect(host="localhost", user="root", password="", database="narayani")
         cur = com.cursor()
@@ -529,14 +534,13 @@ class school_management_system(student_resgistration_system):
                             self.entry15.get(),
                             self.entry16.get(),
                             self.entry1.get()
-
              ))
         com.commit()
         self.fetch_data()
         self.clear_all()
         com.close()
 
-    # >>>>>>>>>>>>>>>>>>>>>>>>>SEARCH FUNCTION OF MAIN WINDOW<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<$#
+#>>>>>>>>>>>>>>>>>>>>>>>>>SEARCH FUNCTION OF MAIN WINDOW<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<$#
     def search(self):
         con = pymysql.connect(host="localhost", user="root", password="", database="narayani")
         cur = con.cursor()
@@ -551,12 +555,7 @@ class school_management_system(student_resgistration_system):
 
         con.close()
 
-
 if __name__ == "__main__":
     main()
-
-
-
-
 
 
